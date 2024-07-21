@@ -1,0 +1,96 @@
+.navbar{
+    background: rgb(30,30,30);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.mmalogo
+{
+    object-fit: cover;
+    height: 4.5rem;
+    width: 3.5rem;
+}
+.navlinkitem{
+    margin: 1rem;   
+    cursor: pointer;
+}
+.navlinkitem:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+.contactbtn {
+    background-color: #FFD700; 
+    color: #333333; 
+    border: 2px solid #FFD700;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    /* text-transform: uppercase; */
+    transition: background-color 0.3s, color 0.3s;
+    height: 3rem;
+    width: 9rem;
+    margin-top: 12px;
+}
+
+.contactbtn:hover {
+    background-color: #FFA500; 
+    color: #ffffff;
+}
+
+
+.active{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.navmenu{
+    position: absolute;
+    top:4rem;
+    right: 2rem;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background:rgb(40,40,40);
+    border-radius: 1rem;
+}
+
+
+.listitem{ 
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+}
+
+.mobmenu{
+    /* display: none; */
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+@media screen and (max-width:720px) {
+    .mobmenu{
+        display: flex;
+    }
+    .navlinks{
+        display: none;
+    }
+    .contactbtn{
+        display: none;
+    }
+}
